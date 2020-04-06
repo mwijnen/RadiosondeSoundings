@@ -9,7 +9,6 @@ namespace RadiosondeDataLab
             Console.WriteLine("RadiosondeSoundingsLab");
 
             Console.Read();
-
         }
     }
 }
