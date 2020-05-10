@@ -123,7 +123,7 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// cCorP is the type of correction applied at the station to the pressure values in the sounding. 
         /// Use whatever code is used in the source dataset. If missing, the field should be left blank.
         /// </summary>
-        string PressuerCorrection { get; set; }
+        string PressureCorrection { get; set; }
 
         /// <summary>
         /// cCorZ is the type of correction applied at the station to geopotential height values in the sounding. 

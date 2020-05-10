@@ -17,6 +17,12 @@ namespace RadiosondeDataDefinitions.Interfaces
     /// </summary>
     public interface IRadiosondeSoundingLevel
     {
+        string Id { get; set; }
+
+        DateTime CreatedDateTimeStamp { get; set; }
+
+        string RadiosondeSoundingId { get; set; }
+
         /// <summary>
         /// iETimes(i) is the time elapsed since the release of the sonde. Units are whole minutes and seconds (mmmss). 
         /// Missing value code is -9999.

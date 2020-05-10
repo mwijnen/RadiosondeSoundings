@@ -9,6 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadiosondeDataDefinitions",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RadiosondeDataCollector", "RadiosondeDataCollector\RadiosondeDataCollector.csproj", "{62F9E39B-254B-445E-BEC7-CB1AC77F630C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{085B5826-7452-4259-8310-782B8F04F4D1}"
+	ProjectSection(SolutionItems) = preProject
+		create_radiosonde_launch_station.sql = create_radiosonde_launch_station.sql
+		create_radiosonde_sounding.sql = create_radiosonde_sounding.sql
+		create_radiosonde_sounding_level.sql = create_radiosonde_sounding_level.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
