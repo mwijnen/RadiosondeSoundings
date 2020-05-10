@@ -33,20 +33,20 @@ namespace RadiosondeDataDefinitions.Interfaces
         ///not exceed 1900-2008. the sounding should not be written if this value is not available or is outside the 
         ///valid range.
         ///</summary>
-        string LaunchYear { get; set; }
+        int LaunchYear { get; set; }
 
         ///<summary>
         ///iCurMon is the two-digit month of the sounding. A valid range is 01-12. the sounding should not be written 
         ///if this value is not available or is outside the valid range
         ///</summary>
-        string LaunchMonth { get; set; }
+        int LaunchMonth { get; set; }
 
         /// <summary>
         /// iCurday is the two-digit day of the sounding. Valid range is 01 through the last possible day of the 
         /// month (for example, 01-28 for February 2007, 01-29 for February 2008, 01-31 for any March). the sounding 
         /// should not be written if this value is not available or is outside the valid range. 
         /// </summary>
-        string LaunchDay { get; set; }
+        int LaunchDay { get; set; }
 
         /// <summary>
         /// iCurHour is the two-digit observation hour of the sounding. Valid range is 00-24 UTC 
@@ -54,13 +54,13 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// a valid release hour is available (see next field). The sounding should not be written if is outside the 
         /// valid range. 
         /// </summary>
-        string LaunchHour { get; set; }
+        int LaunchHour { get; set; }
 
         /// <summary>
         /// iRTime is the actual time of release of the sonde. Units are hhmm (i.e., hour and minutes UTC). Missing 
         /// value code = 9999.
         /// </summary>
-        string LaunchTime { get; set; }
+        int LaunchTime { get; set; }
 
         /// <summary>
         /// iNewNLvls is the number of levels in the sounding that are written to the output data file 
@@ -68,7 +68,7 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// value cannot 
         /// be missing.
         /// </summary>
-        string NumberOfLevelsInSounding { get; set; }
+        int NumberOfLevelsInSounding { get; set; }
 
         /// <summary>
         /// cClouds is a nine-character code giving weather and cloud observations. Use whatever codes are provided in
@@ -81,19 +81,19 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// iLat is the latitude, if generally provided once per sounding in the source data. Units are degrees*10**4. 
         /// Missing value code is -999999.
         /// </summary>
-        string Latitude { get; set; }
+        decimal Latitude { get; set; }
 
         /// <summary>
         /// iLon is the longitude, if generally provided once per sounding in the source data. Units are degrees*10**4. 
         /// Missing value code is -9999999.
         /// </summary>
-        string Longitude { get; set; }
+        decimal Longitude { get; set; }
 
         /// <summary>
         /// iElev is the site elevation, if generally provided once per sounding in the source data. Units are m*10. 
         /// Missing value code is -9999.
         /// </summary>
-        string Elevation { get; set; }
+        decimal Elevation { get; set; }
 
         /// <summary>
         /// cObsType is the type of observation taken during the current flight. Use whatever code is used in the 

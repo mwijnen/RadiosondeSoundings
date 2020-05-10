@@ -27,41 +27,41 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// iETimes(i) is the time elapsed since the release of the sonde. Units are whole minutes and seconds (mmmss). 
         /// Missing value code is -9999.
         /// </summary>
-        string ElapsedTime { get; set; }
+        int ElapsedTime { get; set; }
 
         /// <summary>
         /// iPressures(i) is the pressure at level i. Units are Pa (mb * 100). Missing value code is -9999.
         /// </summary>
-        string Pressure { get; set; }
+        decimal Pressure { get; set; }
 
         /// <summary>
         /// iHeights(i) is the geopotential height at level i. Units are whole meters. Missing value code is -9999.
         /// </summary>
-        string GeopotentialHeight { get; set; }
+        decimal GeopotentialHeight { get; set; }
 
         /// <summary>
         /// iTemps(i) is the temperature at level i. Units are deg C * 10. Missing value code is -9999.
         /// </summary>
-        string Temperature { get; set; }
+        decimal Temperature { get; set; }
 
         /// <summary>
         /// iRelHums(i) is the relative humidity at level i. Units are %*10. Missing value code is -9999.
         /// </summary>
-        string RelativeHumidity { get; set; }
+        decimal RelativeHumidity { get; set; }
 
         /// <summary>
         /// iDewDeps(i) is the dew-point depression at level i. Units are deg C * 10. Missing value code is -9999.
         /// </summary>
-        string DewpointDepression { get; set; }
+        decimal DewpointDepression { get; set; }
 
         /// <summary>
         /// iWDirs(i) is the wind direction at level i. Units are whole degrees from North (going clockwise). Missing value code is -9999.
         /// </summary>
-        string WindDirection { get; set; }
+        decimal WindDirection { get; set; }
 
         /// <summary>
         /// iWSpeeds(i) is the wind speed at level i. Units are m/s * 10. Missing value code is -9999.
         /// </summary>
-        string WindSpeed { get; set; }
+        decimal WindSpeed { get; set; }
     }
 }
