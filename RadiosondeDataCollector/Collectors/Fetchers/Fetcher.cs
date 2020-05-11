@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace RadiosondeDataCollector
+namespace RadiosondeDataCollector.Collectors.Fetchers
 {
     public class Fetcher
     {

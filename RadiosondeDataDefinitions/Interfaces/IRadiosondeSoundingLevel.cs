@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RadiosondeDataDefinitions.Interfaces
 {
@@ -17,7 +15,7 @@ namespace RadiosondeDataDefinitions.Interfaces
     /// </summary>
     public interface IRadiosondeSoundingLevel
     {
-        string Id { get; set; }
+        string RecordId { get; set; }
 
         DateTime CreatedDateTimeStamp { get; set; }
 

@@ -2,7 +2,7 @@
     radiosonde.radiosonde_launch_station;
 
 CREATE TABLE radiosonde.radiosonde_launch_station (
-    id varchar(25),
+    record_id varchar(25),
     created_date_time_stamp datetime,
 	latitude decimal(15,12),
 	longitude decimal(15,12),

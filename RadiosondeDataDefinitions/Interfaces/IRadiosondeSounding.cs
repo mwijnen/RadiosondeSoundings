@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace RadiosondeDataDefinitions.Interfaces
 {
@@ -17,6 +16,10 @@ namespace RadiosondeDataDefinitions.Interfaces
     /// </summary>
     public interface IRadiosondeSounding
     {
+        string RecordId { get; set; }
+
+        DateTime CreatedDateTimeStamp { get; set; }
+
         /// <summary>
         /// CStnid is the 11-character station identification code. the station identification code used in 
         ///the source data should be right-justified in this field and should be left-padded with zeros. 

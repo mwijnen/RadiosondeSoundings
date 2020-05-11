@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RadiosondeDataCollector.Models
 {
-    class RadiosondeSoundingLevel
+    class RadiosondeSoundingLevel : BaseRecord
     {
     }
 }

@@ -2,7 +2,7 @@
     radiosonde.radiosonde_sounding;
 
 CREATE TABLE radiosonde.radiosonde_sounding (
-    id varchar(25),
+    record_id varchar(25),
     created_date_time_stamp datetime,
 	launch_site_id varchar(25),
 	launch_year int,

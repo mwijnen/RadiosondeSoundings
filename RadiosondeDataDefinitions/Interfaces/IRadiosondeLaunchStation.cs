@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RadiosondeDataDefinitions.Interfaces
 {
@@ -12,14 +10,16 @@ namespace RadiosondeDataDefinitions.Interfaces
     /// whose format we plan to closely follow when eventually creating the IGRA 2 station list.
     /// [source: www1.ncdc.noaa.gov/pub/data/igra/igra2-dataset-description.docx]
     /// </summary>
-    interface IRadiosondeLaunchStation
+    public interface IRadiosondeLaunchStation
     {
+        string RecordId { get; set; }
+
+        DateTime CreatedDateTimeStamp { get; set; }
+
         /// <summary>
         /// ID is the station identification code in the 11-character format we use when reformatting data (see Section 8.1.2). 
         /// </summary>
         string Id { get; set; }
-
-        DateTime CreatedDateTimeStamp { get; set; }
 
         /// <summary>
         /// LATITUDE is the latest available latitude of the station (in decimal degrees) as determined from 
@@ -50,22 +50,28 @@ namespace RadiosondeDataDefinitions.Interfaces
         /// </summary>
         string Name { get; set; }
 
+        int FirstYear { get; set; }
+
+        int LastYear { get; set; }
+
+        int Nobs { get; set; }
+
         /// <summary>
         /// FIPS is the two-letter FIPS country code if provided in the inventory or metadata file being reformatted.
         /// Otherwise, this field should be left blank.
         /// </summary>
-        string Fips { get; set; }
+        //string Fips { get; set; }
 
         /// <summary>
         /// CALL is the four-letter international callsign of the station if provided in the inventory or metadata file
         /// being reformatted. Otherwise, this field should be left blank.
         /// </summary>
-        string Call { get; set; }
+        //string Call { get; set; }
 
         /// <summary>
         /// WMOID is the WMO number for the station if provided in the inventory or metadata file being reformatted. 
         /// If the WMO ID is not provided in that file or if the station has no WMO number, then the field is blank.
         /// </summary>
-        string WmoId { get; set; }
+        //string WmoId { get; set; }
     }
 }
