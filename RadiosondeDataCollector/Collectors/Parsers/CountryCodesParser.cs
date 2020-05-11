@@ -42,8 +42,8 @@ namespace RadiosondeDataCollector.Collectors.Parsers
         protected override Dictionary<object, string> SplitLine(string line)
         {
             var lineElements = new Dictionary<object, string>();
-            lineElements.Add(Fields.Code, line.Substring(0, 2));
-            lineElements.Add(Fields.Name, line.Substring(3));
+            lineElements.Add(Fields.Code, line.Substring(0, 2).Trim());
+            lineElements.Add(Fields.Name, line.Substring(3).Trim());
 
             return lineElements;
         }
@@ -56,7 +56,7 @@ namespace RadiosondeDataCollector.Collectors.Parsers
         {
             var countryCode = new RadiosondeCountryCode
             {
-                RecordId = "bluh",
+                RecordId = GenerateID(),
                 CreatedDateTimeStamp = DateTime.Now,
                 Code = lineElements[Fields.Code],
                 Name = lineElements[Fields.Name]

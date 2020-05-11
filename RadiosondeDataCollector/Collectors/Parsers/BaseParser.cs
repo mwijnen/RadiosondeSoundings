@@ -9,6 +9,8 @@ namespace RadiosondeDataCollector.Collectors.Parsers
     {
         public static bool PrintToConsole = true;
 
+        public static DateTime dateTimeStamp = DateTime.Now;
+
         protected IList<T> Parse<T>(IEnumerable<string> lines)
         {
             var result = new List<object>();
@@ -55,6 +57,11 @@ namespace RadiosondeDataCollector.Collectors.Parsers
             }
 
             return result;
+        }
+
+        public static string GenerateID()
+        {
+            return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
         }
 
         protected string FindFirstMatchWithRegexAndRemoveMatchFromLine(string pattern, ref string line)
