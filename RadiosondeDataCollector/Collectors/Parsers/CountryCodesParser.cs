@@ -57,7 +57,7 @@ namespace RadiosondeDataCollector.Collectors.Parsers
             var countryCode = new RadiosondeCountryCode
             {
                 RecordId = GenerateID(),
-                CreatedDateTimeStamp = DateTime.Now,
+                CreatedDateTimeStamp = dateTimeStamp,
                 Code = lineElements[Fields.Code],
                 Name = lineElements[Fields.Name]
             };

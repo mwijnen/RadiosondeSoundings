@@ -131,7 +131,7 @@ namespace RadiosondeDataCollector.Collectors.Parsers
             var radiosonde = new RadiosondeLaunchStation
             {
                 RecordId = GenerateID(),
-                CreatedDateTimeStamp = DateTime.Now,
+                CreatedDateTimeStamp = dateTimeStamp,
                 Id = lineElements[Fields.Id],
                 Latitude = Convert.ToDecimal(lineElements[Fields.Latitude]),
                 Longitude = Convert.ToDecimal(lineElements[Fields.Longitude]),
